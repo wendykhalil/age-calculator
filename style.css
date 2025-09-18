@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+}
+
+.container {
+    margin: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content h2 {
+    color: white;
+    font-size: 50px;
+}
+
+.content span {
+    color: #ffff76;
+}
+.row{
+    background: rgba(255, 255, 255, 0.3);
+    
+    padding: 40px 40px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 500px;
+}
+input{
+    flex: 1;
+    padding: 10px 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.btn{
+    padding: 0 15px;
+    border:none ;
+    outline: none;
+    background-color: #ffff76;
+    cursor: pointer;
+}
+
+ .row input::-webkit-calendar-picker-indicator{
+    /* background-color: red; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 20px;
+    
+
+ }
+ #result{
+    color: white;
+ }
+ #result span {
+    color: #ffff76;
+}
